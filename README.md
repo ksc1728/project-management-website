@@ -7,7 +7,6 @@ A full-stack project management application built with the MERN stack (MongoDB, 
 - User authentication (signup/login)
 - Create and manage projects
 - Add, edit, and organize tasks within projects
-- Drag-and-drop Kanban board for task management
 - Responsive design with modern UI
 
 ## Tech Stack
@@ -16,7 +15,6 @@ A full-stack project management application built with the MERN stack (MongoDB, 
 - React 18
 - React Router for navigation
 - Axios for API calls
-- React Beautiful DnD for drag-and-drop functionality
 - Tailwind CSS for styling
 - Font Awesome for icons
 
@@ -30,10 +28,10 @@ A full-stack project management application built with the MERN stack (MongoDB, 
 
 ```
 mern-externship/
-├── back1/          # Authentication backend (port 5000)
+├── back1/          
 │   ├── index.js
 │   └── package.json
-├── back2/          # Main application backend (port 9000)
+├── back2/          
 │   ├── server.js
 │   ├── models/
 │   │   ├── project.js
@@ -42,7 +40,7 @@ mern-externship/
 │   │   ├── project.js
 │   │   └── task.js
 │   └── package.json
-└── front1/         # React frontend (port 3000)
+└── front1/         
     ├── public/
     ├── src/
     │   ├── components/
@@ -61,7 +59,7 @@ mern-externship/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ksc1728/project-management-website
    cd mern-externship
    ```
 
@@ -94,13 +92,13 @@ mern-externship/
 
    **back1/.env:**
    ```
-   MONGO_URI=mongodb+srv://login:login@cluster0.qrodzzq.mongodb.net/userdb
+   MONGO_URI
    PORT=5000
    ```
 
    **back2/.env:**
    ```
-   MONGO_URI=mongodb+srv://projectmanage:projectmanage@cluster0.q5i7ugy.mongodb.net/projectmanage
+   MONGO_URI
    PORT=9000
    ```
 
@@ -153,17 +151,4 @@ mern-externship/
 1. Sign up for a new account or log in with existing credentials
 2. Create a new project
 3. Add tasks to your projects
-4. Use the Kanban board to drag and drop tasks between different stages
-5. Edit or delete projects and tasks as needed
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the ISC License.
+4. Edit or delete projects and tasks as needed
